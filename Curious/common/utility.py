@@ -70,7 +70,7 @@ def send_email(receiver, ecode):
     message['To'] = receiver
 
     smtpObj = SMTP_SSL('smtp.qq.com')
-    smtpObj.login(user='497536112@qq.com', password='lxagzlefoatzbhcf')
+    smtpObj.login(user='', password='')
     smtpObj.sendmail(sender, receiver, str(message))
     smtpObj.quit()
 
@@ -84,5 +84,4 @@ def get_email_code():
 if __name__ == '__main__':
     code = get_email_code()
     print(code)
-    # send_email('170200810@stu.hit.edu.cn', code)
-    send_email('2513105294@qq.com', code)
+    
